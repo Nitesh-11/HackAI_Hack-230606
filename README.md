@@ -1,9 +1,9 @@
 TEMPERATURE AGENT
 
-#DESCRIPTION
+# DESCRIPTION
 The "Temperature Agent" project is a simple software tool designed to monitor and notify users when the temperature falls outside a specified user-defined range. It operates by continuously checking the current temperature and comparing it to the predefined minimum and maximum temperature values set by the user.
 
-#USE-CASE
+# USE-CASE
 The "Photovoltaic Power Predictor" is designed for forecasting solar power generation from photovoltaic (PV) systems. This prediction model utilizes a wide range of dynamic environmental parameters, including temperature, temperature range, wind speed, longitude, and latitude, among others, to provide highly accurate estimates of PV system output.
 
 Table of Contents
@@ -14,7 +14,7 @@ Usage
 Contributing
 License
 
-#ABOUT
+# ABOUT
 
 Overview
 The "Photovoltaic Power Predictor" is an innovative software solution designed to accurately forecast and predict solar power generation from photovoltaic (PV) systems. This powerful tool leverages dynamic environmental parameters, including temperature, temperature range, wind speed, longitude, and latitude, to provide real-time and precise estimates of PV system output.
@@ -27,7 +27,7 @@ Accurate Solar Energy Forecasts: By processing this wealth of data, the tool gen
 Energy Optimization: The "Photovoltaic Power Predictor" assists in optimizing the performance and efficiency of PV systems by considering various factors that impact solar power generation. This leads to better resource utilization and enhanced energy management.
 
 
-#Exceution Command
+# Execution Command
 python modelAgent.py
 python temperatureAgent.py
 python webAgent.py
@@ -37,7 +37,7 @@ streamlit run front2.py
 env\Scripts\activate.bat
 python webAgent.py
 
-#LIBRARIES
+# LIBRARIES
 1.numpy
 2.pandas
 3. matplotlib
