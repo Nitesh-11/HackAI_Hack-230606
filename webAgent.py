@@ -90,6 +90,9 @@ async def handle_weather_response(ctx: Context, sender: str, msg: Weather):
         ctx.logger.info(f"Got response from temperature_agent ({sender[-10:]}): {msg.text}")
     elif sender == modelAgent:
         ctx.logger.info(f"Got response from solar_Model agent ({sender[-10:]}): {msg.text}")
+        with open("database3.json", 'w') as f:
+            var = {"preds":msg.degrees}
+            json.dump(var, f)
     else:
         ctx.logger.info("Waiting for the response...")
 

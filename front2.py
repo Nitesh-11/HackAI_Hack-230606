@@ -16,21 +16,21 @@ with open("database2.json", "r") as a:
 
 value = data['boole']
 if value == 0:
-    if st.button(label="Condition"):
+    if st.button(label="Temperature Condition"):
         # Create a message based on the input values
         message = f"There is a change in temperature"
         
 
         # Show the message in a dialog box
-        st.info(message)
+        st.warning(message)
 else:
-    if st.button(label="Condition"):
+    if st.button(label="Temperature Condition"):
         # Create a message based on the input values
         message = f"There is no change in temperature "
             
 
         # Show the message in a dialog box
-        st.info(message)
+        st.warning(message)
 
 
 
@@ -44,7 +44,7 @@ with open('database.json', 'w') as f:
 
 
 # Add a button to trigger a dialog box
-if st.button("Show Dialog Box"):
+if st.button("Entered Inputs"):
     # Create a message based on the input values
     message = f"You entered: Input 1 - {input1:.2f}, Input 2 - {input2:.2f}"
     
@@ -52,6 +52,13 @@ if st.button("Show Dialog Box"):
     # Show the message in a dialog box
     st.info(message)
 
+if st.button(label="Show Predictions"):
+    with open("database3.json") as f:
+        a = json.load(f)
+        pred = a["preds"]
+        message = f"Amount of that can be produce are {pred}"
+
+        st.info(message)
 
 
 def send():
